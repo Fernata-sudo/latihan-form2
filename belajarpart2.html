@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>website form jaki</title>
+    </head>
+    <style>
+        body {
+            background: linear-gradient(to bottom, white, rgb(205, 255, 215));
+            margin: 0px;
+            min-height: 100vh;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(19, 116, 84);
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            text-align: center;
+        }
+        .form-card {
+            width: 100%;
+            max-width: 430px;
+            background: rgba(255, 255, 255, 0.94);
+            border-radius: 18px;
+            padding: 28px 24px;
+            box-shadow: 0 16px 36px rgba(22, 146, 61, 0.34);
+            border: 2px solid rgba(56, 213, 111, 0.2);
+        }
+        .formulir, option, textarea, select, input[type="text"] {
+            margin-bottom: 10px;
+            text-align: center;
+            border-radius: 6px;
+            color: rgb(19, 116, 84);
+            border-color: rgb(19, 116, 84);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .awal {
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.5;
+            color: rgb(19, 116, 84);
+        }
+        button {
+            cursor: pointer;
+            text-align: center;
+            border-radius: 6px;
+            padding: 3px 12px;
+            background-color: rgba(56, 213, 111, 0.2);
+        }
+    </style>
+    <body>
+        <main class="form-card">
+            <h1>Form Gabut</h1>
+            <p class="awal">Silahkan di isi, ga bakal aku tau kok,<br>soalnya ga punya database awokawok.</p>
+            <form>
+                <div class="formulir">
+                    <label for="nama">Nama:</label><br>
+                    <input type="text" id="nama" name="nama" placeholder="Ketik nama kamu">
+                </div>
+                <div class="formulir">
+                    <label for="hobi">Hobi:</label><br>
+                    <input type="text" id="hobi" name="hobi" placeholder="Ketik hobi kamu">
+                </div>
+                <div class="formulir">
+                    <label for="Pesan">Pesan:</label><br>
+                    <textarea id="Pesan" name="Pesan" placeholder="Ketik pesan kamu"></textarea>
+                </div>
+                <div class="formulir">
+                    <label for="jurusan">Pilih Jenjang Sekolah:</label><br>
+                    <select id="jurusan" name="jurusan">
+                        <option value="tkj">SD</option>
+                        <option value="mp">SMP</option>
+                        <option value="bd">SMA/SMK</option>
+                        <option value="ak">Mahasiswa</option>
+                    </select>
+                </div>
+                <button type="submit" style="margin-top: 6px;" style="text-align: center;">Kirim</button>
+            </form>
+        </main>
+    </body>
+</html>
